@@ -1,0 +1,25 @@
+*{box-sizing:border-box}html,body{height:100%}body{
+  margin:0;font-family:Orbitron,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  color:#e6ffff;background:#080808;overflow:auto;
+}
+#bg{position:fixed;inset:0;z-index:-1;width:100%;height:100%}
+.site-header{padding:48px 20px 8px;text-align:center}
+.logo{font-size:48px;margin:0;color:#00ffe1;letter-spacing:6px;text-shadow:0 0 16px #00ffe1aa,0 0 36px #00ffe1bb}
+.logo span{color:#8be0ff}
+.tag{margin:8px 0 0;color:#9ff7ef;opacity:0.8}
+
+.grid{max-width:1100px;margin:36px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;padding:12px}
+
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(0,0,0,0.6);backdrop-filter:blur(6px);transition:transform .22s ease,box-shadow .22s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(0,200,255,0.08)}
+
+.card h3{margin:0 0 8px;font-size:20px;color:#fff}
+.desc{margin:0 0 14px;color:#9ff7ef;opacity:0.9}
+
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#00ffe1,#00aaff);color:#031014;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,170,255,0.14)}
+.btn:active{transform:translateY(2px)}
+
+.site-footer{text-align:center;padding:26px;color:#66e9e0;opacity:0.8}
+
+/* responsive tweaks */
+@media (max-width:520px){.logo{font-size:32px;margin-top:12px}.grid{padding:8px;gap:14px}}
